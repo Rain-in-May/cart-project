@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://myinstance.cppon2aqojb8.ap-northeast-2.rds.amazonaws.com/myinstance
+    driverClassName: org.mariadb.jdbc.Driver
+    username: myinstance
+    password: myinstance
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+  # Hibernate ddl auto (create, create-drop, validate, update)
+  logging:
+    level:
+      org:
+        hibernate:
+          SQL: DEBUG
+          type:
+            descriptor:
+              sql:
+                BasicBinder: TRACE
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: eeeb0053@gmail.com
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+    max-request-size: 20MB
+    max-file-size: 20MB
+UserController:
+  signin: Authenticates user and returns its JWT token.
+  signup: Creates user and returns its JWT token
+  delete: Deletes specific user by username
+  search: Returns specific user by username
+  me: Returns current user's data
