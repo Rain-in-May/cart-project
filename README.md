@@ -37,19 +37,46 @@
 <div markdown="1">
 
 ### 4.1. 리뷰 기능
-- **Axios 비동기 요청** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/review/ReviewForm.js)
+- **리뷰 작성(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/review/ReviewForm.js)
   - 리뷰를 등록하는 POST 요청을 비동기로 보냅니다.
+- **리뷰 목록(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/review/ReviewList.js)
+  - 리뷰를 조회하는 GET 요청을 비동기로 보냅니다.
+- **리뷰 수정 및 삭제(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/review/ReviewDetail.js)
+  - 리뷰를 수정 혹은 삭제하는 PUT/DELETE 요청을 비동기로 보냅니다.
 - **요청 처리** 
 :pushpin: [Controller 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/review/controller/ReviewController.java)
 :pushpin: [Service 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/review/service/ReviewServiceImpl.java)
   - Controller에서는 넘어온 요청을 받고, Service에서 로직을 처리합니다.
   
 ### 4.2. 검색 기능
+- **키워드 검색(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/exhibition/Listing/SearchListing.js)
+  - 검색한 키워드에 해당하는 목록을 가져오는 GET 요청을 비동기로 보냅니다.
+- **요청 처리** 
+:pushpin: [Controller 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/exhibition/controller/ExhbnController.java)
+:pushpin: [Repository 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/exhibition/repository/ExhbnRepositoryImpl.java)
+  - Controller에서는 넘어온 요청을 받고, Service에서 로직을 처리합니다.
+  - Repository에서 QueryDSL를 사용하여 키워드 검색을 실행합니다.
   
 ### 4.3. 마이 페이지
-
+- **리뷰 목록(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/review/ReviewList.js)
+  - 유저의 리뷰 목록을 가져오는 GET 요청을 비동기로 보냅니다.
+- **예약 목록(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/booking/BookingList.js)
+  - 유저의 예약 목록을 가져오는 GET 요청을 비동기로 보냅니다.
+- **요청 처리** 
+:pushpin: [Controller 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/booking/controller/BookingController.java)
+:pushpin: [Service 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/booking/service/BookingServiceImpl.java)
+  - Controller에서는 넘어온 요청을 받고, Service에서 로직을 처리합니다.
+  
 ### 4.4. 관리자 페이지
-
+- **전시 등록(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/exhibition/AddExhibition.js)
+  - 전시를 등록하는 POST 요청을 비동기로 보냅니다.
+- **전시관 등록(Axios 요청)** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/hall/AddHall.js)
+  - 전시관을 등록하는 POST 요청을 비동기로 보냅니다.
+- **요청 처리** 
+:pushpin: [Controller 코드 확인](https://github.com/Rain-in-May/cart-project/tree/main/be/src/main/java/org/KwonEunbi/api/hall/controller)
+:pushpin: [Service 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/hall/service/HallServiceImpl.java)
+  - Controller에서는 넘어온 요청을 받고, Service에서 로직을 처리합니다.
+  
 </div>
 </details>
 
