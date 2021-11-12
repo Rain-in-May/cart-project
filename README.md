@@ -37,7 +37,13 @@
 <div markdown="1">
 
 ### 4.1. 리뷰 기능
-
+- **Axios 비동기 요청** :pushpin: [코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/fe/src/container/review/ReviewForm.js)
+  - 리뷰를 등록하는 POST 요청을 비동기로 보냅니다.
+- **요청 처리** 
+:pushpin: [Controller 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/review/controller/ReviewController.java)
+:pushpin: [Service 코드 확인](https://github.com/Rain-in-May/cart-project/blob/main/be/src/main/java/org/KwonEunbi/api/review/service/ReviewServiceImpl.java)
+  - Controller에서는 넘어온 요청을 받고, Service에서 로직을 처리합니다.
+  
 ### 4.2. 검색 기능
   
 ### 4.3. 마이 페이지
